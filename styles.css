@@ -1,0 +1,363 @@
+body {
+	padding: 0;
+    margin: 0;
+    position: relative;
+}
+.root {
+    margin: 0px 40px;
+}
+/* Шапка */
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+/* Для белого фона 
+.logo {
+    background-image: url(http://moloko.kirys.ru/img/logo.png);
+    width: 165px;
+    height: 38px;
+    display: inline-block;
+}
+
+.twi {
+    background-image: url(http://moloko.kirys.ru/img/twi.png);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 1px solid #24AFF2;
+    border-left:0;
+    opacity: 0.7;
+}
+.twi:hover {
+    background: #24AFF2;
+    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
+    opacity: 1;
+    transition:.1s;
+}
+.vk {
+    background-image: url(http://moloko.kirys.ru/img/vk.png);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 1px solid #4F74A7;
+    border-left:0;
+    margin: 0px;
+    opacity: 0.7;
+}
+.vk:hover {
+    background: #4F74A7;
+    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
+    opacity: 1;
+    transition:.1s;
+}
+
+.fb {
+    background-image: url(http://moloko.kirys.ru/img/fb.png);
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border: 1px solid #3B589D;
+    border-left:0;
+    opacity: 0.7;
+
+}
+.fb:hover {
+    background: #4F74A7;
+    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
+    opacity: 1;
+    transition:.1s;
+}
+/* Конец белого фона */
+
+
+/* Для черного фона */
+.logo {
+    background-image: url(http://moloko.kirys.ru/img/logo-wh.png);
+    width: 171px;
+    height: 44px;
+    display: inline-block;
+    margin: 20px 0px 0px 80px;
+}
+
+.twi {
+    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
+    background-position: center;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid rgba(256,256,256,0.6);
+    border-left-color: transparent;
+    opacity: 0.7;
+}
+.twi:hover {
+    background: #24AFF2;
+    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
+    background-position: center;
+    border-color: #24AFF2;
+    opacity: 1;
+    transition:.1s;
+}
+.vk {
+    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
+    background-position: center;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid rgba(256,256,256,0.6);
+    border-left-color: transparent;
+    margin: 0px;
+    opacity: 0.7;
+}
+.vk:hover {
+    background: #4F74A7;
+    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
+    background-position: center;
+    border-color:#4F74A7; 
+    opacity: 0.9;
+    transition:.1s;
+}
+
+.fb {
+    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
+    background-position: center;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    border: 1px solid rgba(256,256,256,0.6);
+    border-left-color: transparent;
+    opacity: 0.7;
+
+}
+.fb:hover {
+    background: #3B589D;
+    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
+    background-position: center;
+    border-color: #3B589D;;
+    opacity: 1;
+    transition:.1s;
+}
+.search {
+    background-color:transparent;
+    color: white;
+    padding: 8px 12px;
+    height:44px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgba(256,256,256,0.5);
+    outline: none;
+    float: right;
+    margin: 20px 80px 0px 0px;
+}
+/* Конец чёрого фона */
+.cover {
+    min-width: 1000px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.post {
+    background-size: cover;
+    background-position: center 60%;
+    top:0;
+    left:0;
+    min-width: 1000px;
+    width: 100%;
+    max-width: 100%;
+    height:350px;
+    position: relative;
+}
+.post:after {
+    content:' ';
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.6);
+}
+.headline {
+    display: block;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top:100px;
+    left: 80px;
+}
+.headline h1 {
+    color: white;
+    font-family: 'PT Sans Caption';
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.caption {
+    color: white;
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.information {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.author {
+    font-weight: bold;
+    margin-right: 15px;
+}
+.date {
+    color: rgba(256,256,256,0.7);
+}
+
+/* Конец шапки */
+
+#quotation {
+    position:relative;
+    width:650px;
+    min-height: 100px;
+    overflow: hidden;
+    padding: 0 0 45px 0;
+    background-size: cover !important;
+    background-position: center;
+    background-image: url(defaultback.jpg);
+}
+.quotes {
+    position:absolute;
+    top:15px;
+    left:30px;
+    color:#fff;
+    font-family:'Playfair Display';
+    font-weight:bold;
+    font-size:72px;
+    z-index:1;
+}
+#author {
+    margin-top:10px;
+    width: 100%;
+    color: white;
+    font-family:Arial;
+    font-weight:normal;
+    font-style:normal;
+    font-size:18px;
+    background: none;
+    border: 0;
+    outline: none;
+    spellcheck:none;
+}
+.text {
+    position:relative;
+    width:490px;
+    padding: 30px 30px 0 90px;
+    color:#fff;
+    font-family:'Playfair Display';
+    font-weight:bold;
+    font-style:italic;
+    font-size:24px;
+    z-index:1;
+}
+#quote {
+    color:#fff;
+    font-family:'Playfair Display';
+    font-weight:bold;
+    font-style:italic;
+    font-size:24px;
+    background: none;
+    border: 0;
+    outline: none;
+    resize: none;
+    width: 490px;
+    height: 40px;
+    spellcheck:none;
+}
+#quotation:after {
+    content:' ';
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0, 0.6);
+}
+#imageUrl {
+    width: 250px;
+}
+.social {
+    position:absolute;
+    top:30px;
+    right:20px;
+    z-index:1;
+    opacity: 0.7;
+}
+.social div {
+    margin-bottom: 5px;
+}
+#image {
+	visibility: hidden;
+}
+#result {
+	display: none;
+	position: relative;
+}
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 149px;
+    padding: 0 5px;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top:-2;
+}
+.button {
+	background: transparent;
+	border:1px solid #8C8C8C;
+	padding: 10px 15px;
+	margin-right: 15px;
+	font-family: sans-serif;
+	color: #8C8C8C;
+	font-size:16px;
+	font-weight: bold;
+	border-radius: 3px;
+	outline: none;
+	text-decoration: none;
+    transition: .1s;
+}
+.button:hover,.button_selected{
+	background: #8C8C8C;
+	color: white;
+}
+#download {
+	background: transparent;
+	border:1px solid #4cbd18;
+	padding: 10px 15px;
+	margin-right: 15px;
+	font-family: sans-serif;
+	color: #4cbd18;
+	font-size:16px;
+	font-weight: bold;
+	border-radius: 3px;
+	outline: none;
+	transition: .1s;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px 0px;
+}
+#download:before {
+    content: '↓ ';
+}
+#download:active:before {
+    content: '✓ ';
+}
+#download:hover {
+	background: #4cbd18;
+	color: white;
+}
+#quoteImage {
+    visibility: hidden;
+}
+.quoteContainer {
+    width: 670;
+    position: relative;
+}
