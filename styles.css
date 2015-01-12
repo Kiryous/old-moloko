@@ -1,4 +1,4 @@
-@@ -4,7 +4,7 @@ body {
+body {
     position: relative;
 }
 .root {
@@ -7,7 +7,6 @@
 }
 /* Шапка */
 .header {
-@@ -155,7 +155,19 @@ body {
     width: 100%;
     max-width: 100%;
     position: relative;
@@ -27,7 +26,6 @@
 .post {
     background-size: cover;
     background-position: center 60%;
-@@ -167,15 +179,6 @@ body {
     height:350px;
     position: relative;
 }
@@ -43,7 +41,6 @@
 .headline {
     display: block;
     position: absolute;
-@@ -188,13 +191,14 @@ body {
     color: white;
     font-family: 'PT Sans Caption';
     font-size: 48px;
@@ -59,161 +56,7 @@
 }
 .information {
     font-family: Arial, sans-serif;
-@@ -208,156 +212,4 @@ body {
     color: rgba(256,256,256,0.7);
 }
 
-/* Конец шапки */
-
-#quotation {
-    position:relative;
-    width:650px;
-    min-height: 100px;
-    overflow: hidden;
-    padding: 0 0 45px 0;
-    background-size: cover !important;
-    background-position: center;
-    background-image: url(defaultback.jpg);
-}
-.quotes {
-    position:absolute;
-    top:15px;
-    left:30px;
-    color:#fff;
-    font-family:'Playfair Display';
-    font-weight:bold;
-    font-size:72px;
-    z-index:1;
-}
-#author {
-    margin-top:10px;
-    width: 100%;
-    color: white;
-    font-family:Arial;
-    font-weight:normal;
-    font-style:normal;
-    font-size:18px;
-    background: none;
-    border: 0;
-    outline: none;
-    spellcheck:none;
-}
-.text {
-    position:relative;
-    width:490px;
-    padding: 30px 30px 0 90px;
-    color:#fff;
-    font-family:'Playfair Display';
-    font-weight:bold;
-    font-style:italic;
-    font-size:24px;
-    z-index:1;
-}
-#quote {
-    color:#fff;
-    font-family:'Playfair Display';
-    font-weight:bold;
-    font-style:italic;
-    font-size:24px;
-    background: none;
-    border: 0;
-    outline: none;
-    resize: none;
-    width: 490px;
-    height: 40px;
-    spellcheck:none;
-}
-#quotation:after {
-    content:' ';
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background:rgba(0, 0, 0, 0.6);
-}
-#imageUrl {
-    width: 250px;
-}
-.social {
-    position:absolute;
-    top:30px;
-    right:20px;
-    z-index:1;
-    opacity: 0.7;
-}
-.social div {
-    margin-bottom: 5px;
-}
-#image {
-    visibility: hidden;
-}
-#result {
-    display: none;
-    position: relative;
-}
-input[type=range][orient=vertical]
-{
-    writing-mode: bt-lr; /* IE */
-    -webkit-appearance: slider-vertical; /* WebKit */
-    width: 8px;
-    height: 149px;
-    padding: 0 5px;
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    top:-2;
-}
-.button {
-    background: transparent;
-    border:1px solid #8C8C8C;
-    padding: 10px 15px;
-    margin-right: 15px;
-    font-family: sans-serif;
-    color: #8C8C8C;
-    font-size:16px;
-    font-weight: bold;
-    border-radius: 3px;
-    outline: none;
-    text-decoration: none;
-    transition: .1s;
-}
-.button:hover,.button_selected{
-    background: #8C8C8C;
-    color: white;
-}
-#download {
-    background: transparent;
-    border:1px solid #4cbd18;
-    padding: 10px 15px;
-    margin-right: 15px;
-    font-family: sans-serif;
-    color: #4cbd18;
-    font-size:16px;
-    font-weight: bold;
-    border-radius: 3px;
-    outline: none;
-    transition: .1s;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    margin: 10px 0px;
-}
-#download:before {
-    content: '↓ ';
-}
-#download:active:before {
-    content: '✓ ';
-}
-#download:hover {
-    background: #4cbd18;
-    color: white;
-}
-#quoteImage {
-    visibility: hidden;
-}
-.quoteContainer {
-    width: 670;
-    position: relative;
-}
 /* Конец шапки */
