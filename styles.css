@@ -1,169 +1,33 @@
-body {
-	padding: 0;
-    margin: 0;
+@@ -4,7 +4,7 @@ body {
     position: relative;
 }
 .root {
     margin: 0px 40px;
+    margin: 20px 40px;
 }
 /* Шапка */
 .header {
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-/* Для белого фона 
-.logo {
-    background-image: url(http://moloko.kirys.ru/img/logo.png);
-    width: 165px;
-    height: 38px;
-    display: inline-block;
-}
-
-.twi {
-    background-image: url(http://moloko.kirys.ru/img/twi.png);
-    width: 36px;
-    height: 36px;
-    display: inline-block;
-    border: 1px solid #24AFF2;
-    border-left:0;
-    opacity: 0.7;
-}
-.twi:hover {
-    background: #24AFF2;
-    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
-    opacity: 1;
-    transition:.1s;
-}
-.vk {
-    background-image: url(http://moloko.kirys.ru/img/vk.png);
-    width: 36px;
-    height: 36px;
-    display: inline-block;
-    border: 1px solid #4F74A7;
-    border-left:0;
-    margin: 0px;
-    opacity: 0.7;
-}
-.vk:hover {
-    background: #4F74A7;
-    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
-    opacity: 1;
-    transition:.1s;
-}
-
-.fb {
-    background-image: url(http://moloko.kirys.ru/img/fb.png);
-    width: 36px;
-    height: 36px;
-    display: inline-block;
-    border: 1px solid #3B589D;
-    border-left:0;
-    opacity: 0.7;
-
-}
-.fb:hover {
-    background: #4F74A7;
-    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
-    opacity: 1;
-    transition:.1s;
-}
-/* Конец белого фона */
-
-
-/* Для черного фона */
-.logo {
-    background-image: url(http://moloko.kirys.ru/img/logo-wh.png);
-    width: 171px;
-    height: 44px;
-    display: inline-block;
-    margin: 20px 0px 0px 80px;
-}
-
-.twi {
-    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    opacity: 0.7;
-}
-.twi:hover {
-    background: #24AFF2;
-    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
-    background-position: center;
-    border-color: #24AFF2;
-    opacity: 1;
-    transition:.1s;
-}
-.vk {
-    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    margin: 0px;
-    opacity: 0.7;
-}
-.vk:hover {
-    background: #4F74A7;
-    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
-    background-position: center;
-    border-color:#4F74A7; 
-    opacity: 0.9;
-    transition:.1s;
-}
-
-.fb {
-    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    opacity: 0.7;
-
-}
-.fb:hover {
-    background: #3B589D;
-    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
-    background-position: center;
-    border-color: #3B589D;;
-    opacity: 1;
-    transition:.1s;
-}
-.search {
-    background-color:transparent;
-    color: white;
-    padding: 8px 12px;
-    height:44px;
-    font-size: 16px;
-    border-radius: 3px;
-    border: 1px solid rgba(256,256,256,0.5);
-    outline: none;
-    float: right;
-    margin: 20px 80px 0px 0px;
-}
-/* Конец чёрого фона */
-.cover {
-    min-width: 1000px;
+@@ -155,7 +155,19 @@ body {
     width: 100%;
     max-width: 100%;
     position: relative;
+    overflow: hidden;
+    box-shadow:0 2px 3px rgba(0,0,0,0.3);
 }
+.cover:after {
+    content:' ';
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(49, 83, 118, 0.7);
+}
+
 .post {
     background-size: cover;
     background-position: center 60%;
-    top:0;
-    left:0;
-    min-width: 1000px;
-    width: 100%;
-    max-width: 100%;
+@@ -167,15 +179,6 @@ body {
     height:350px;
     position: relative;
 }
@@ -179,32 +43,23 @@ body {
 .headline {
     display: block;
     position: absolute;
-    color: white;
-    z-index: 1;
-    top:100px;
-    left: 80px;
-}
-.headline h1 {
+@@ -188,13 +191,14 @@ body {
     color: white;
     font-family: 'PT Sans Caption';
     font-size: 48px;
     margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .caption {
     color: white;
     font-family: Arial,sans-serif;
     font-size: 18px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 .information {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-.author {
-    font-weight: bold;
-    margin-right: 15px;
-}
-.date {
+@@ -208,156 +212,4 @@ body {
     color: rgba(256,256,256,0.7);
 }
 
@@ -291,11 +146,11 @@ body {
     margin-bottom: 5px;
 }
 #image {
-	visibility: hidden;
+    visibility: hidden;
 }
 #result {
-	display: none;
-	position: relative;
+    display: none;
+    position: relative;
 }
 input[type=range][orient=vertical]
 {
@@ -310,39 +165,39 @@ input[type=range][orient=vertical]
     top:-2;
 }
 .button {
-	background: transparent;
-	border:1px solid #8C8C8C;
-	padding: 10px 15px;
-	margin-right: 15px;
-	font-family: sans-serif;
-	color: #8C8C8C;
-	font-size:16px;
-	font-weight: bold;
-	border-radius: 3px;
-	outline: none;
-	text-decoration: none;
+    background: transparent;
+    border:1px solid #8C8C8C;
+    padding: 10px 15px;
+    margin-right: 15px;
+    font-family: sans-serif;
+    color: #8C8C8C;
+    font-size:16px;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+    text-decoration: none;
     transition: .1s;
 }
 .button:hover,.button_selected{
-	background: #8C8C8C;
-	color: white;
+    background: #8C8C8C;
+    color: white;
 }
 #download {
-	background: transparent;
-	border:1px solid #4cbd18;
-	padding: 10px 15px;
-	margin-right: 15px;
-	font-family: sans-serif;
-	color: #4cbd18;
-	font-size:16px;
-	font-weight: bold;
-	border-radius: 3px;
-	outline: none;
-	transition: .1s;
-	text-decoration: none;
-	cursor: pointer;
-	display: inline-block;
-	margin: 10px 0px;
+    background: transparent;
+    border:1px solid #4cbd18;
+    padding: 10px 15px;
+    margin-right: 15px;
+    font-family: sans-serif;
+    color: #4cbd18;
+    font-size:16px;
+    font-weight: bold;
+    border-radius: 3px;
+    outline: none;
+    transition: .1s;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 0px;
 }
 #download:before {
     content: '↓ ';
@@ -351,8 +206,8 @@ input[type=range][orient=vertical]
     content: '✓ ';
 }
 #download:hover {
-	background: #4cbd18;
-	color: white;
+    background: #4cbd18;
+    color: white;
 }
 #quoteImage {
     visibility: hidden;
@@ -361,3 +216,4 @@ input[type=range][orient=vertical]
     width: 670;
     position: relative;
 }
+/* Конец шапки */
