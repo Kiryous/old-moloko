@@ -1,16 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
-    padding: 0;
-    margin: 0;
-    position: relative;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+}
+a:hover,
+a:visited:hover {
+  color: #d04000;
+  border-color: rgba(208,64,0,0.5);
+  -webkit-transition: 0s ease;
+          transition: 0s ease;
 }
 .root {
     margin: 20px 40px;
+    min-height: 100%;
+    padding-bottom:-140px
 }
 /* Шапка */
-.header {
+.header_container {
     width: 100%;
     position: absolute;
+    top:20px;
     z-index: 1;
+}
+.header {
+	width: 1000px;
+	margin: 0 auto;
 }
 /* Для белого фона 
 .logo {
@@ -73,70 +101,60 @@ body {
 
 /* Для черного фона */
 .logo {
-    background-image: url(http://moloko.kirys.ru/img/logo-wh.png);
+    background-image: url(http://moloko.kirys.ru/img/logo-whbd.png);
     width: 171px;
     height: 44px;
     display: inline-block;
-    margin: 20px 0px 0px 80px;
+    margin-left: 40px;
+}
+/* Социоссылки */
+.twi,.vk,.fb,.inst {
+	background-image: url(http://moloko.kirys.ru/img/networklinks.png);
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    border: 1px solid rgba(256,256,256,0.6);
+    border-left: 0;
+    opacity: 0.7;
 }
 
 .twi {
-    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    opacity: 0.7;
-}
-.twi:hover {
-    background: #24AFF2;
-    background-image: url(http://moloko.kirys.ru/img/twi-wh.png);
-    background-position: center;
-    border-color: #24AFF2;
-    opacity: 1;
-    transition:.1s;
+    background-position: -45px 0px;
 }
 .vk {
-    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    margin: 0px;
-    opacity: 0.7;
+    background-position: 0px 0px;
+}
+.fb {
+    background-position: -89px 0px;
+}
+.inst {
+	background-position: -132px 0px;
+}
+.twi:hover {
+    background-color: #25aef3;
+    border-color: #25aef3;
 }
 .vk:hover {
-    background: #4F74A7;
-    background-image: url(http://moloko.kirys.ru/img/vk-wh.png);
-    background-position: center;
+    background-color: #4F74A7;
     border-color:#4F74A7; 
+}
+.fb:hover {
+    background-color: #3B589D;
+    border-color: #3B589D;
+}
+.inst:hover {
+	background-color: #A0674F;
+    border-color: #A0674F;
+}
+.twi:hover,.vk:hover,.fb:hover,inst:hover {
+    border-left: 0;
     opacity: 0.9;
     transition:.1s;
 }
+/* Конец социоссылок */
 
-.fb {
-    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
-    background-position: center;
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    border: 1px solid rgba(256,256,256,0.6);
-    border-left-color: transparent;
-    opacity: 0.7;
 
-}
-.fb:hover {
-    background: #3B589D;
-    background-image: url(http://moloko.kirys.ru/img/fb-wh.png);
-    background-position: center;
-    border-color: #3B589D;;
-    opacity: 1;
-    transition:.1s;
-}
 .search {
     background-color:transparent;
     color: white;
@@ -146,59 +164,88 @@ body {
     border: 1px solid rgba(256,256,256,0.5);
     outline: none;
     float: right;
-    margin: 20px 80px 0px 0px;
+    position: relative;
+    margin-right: 40px;
 }
-/* Конец чёрого фона */
+::-webkit-input-placeholder {color:rgba(255, 255, 255, 0.6);}
+::-moz-placeholder          {color:rgba(255, 255, 255, 0.6);}/* Firefox 19+ */
+:-moz-placeholder           {color:rgba(255, 255, 255, 0.6);}/* Firefox 18- */
+:-ms-input-placeholder      {color:rgba(255, 255, 255, 0.6);}
+
 .cover {
     min-width: 1000px;
     width: 100%;
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    box-shadow:0 2px 3px rgba(0,0,0,0.3);
+    color: white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
-.post {
+.post,.post_illustration {
     background-size: cover;
     background-position: center 60%;
-    top:0;
-    left:0;
     min-width: 1000px;
     width: 100%;
-    max-width: 100%;
     height:300px;
     position: relative;
 }
 .post:after {
     content:' ';
     position: absolute;
-    width:100%;
-    height:100%;
     top:0;
     left:0;
+    width:100%;
+    height:100%;
     background:rgba(0, 0, 0, 0.5);
 }
+
+.post_container {
+	position: absolute;
+	width: 100%;
+	bottom:0;
+	z-index: 1;
+}
+.post_info {
+	margin: 0 auto;
+	width: 1000px;
+	height: 200px;
+	background-position: 40px 0; 
+	background-repeat: no-repeat;
+}
+.headline_illustration {
+    padding: 20px 0px 0px 340px;
+    display: inline-block;
+}
 .headline {
-    font-family: Arial, sans-serif;
-    display: block;
-    position: absolute;
-    color: white;
-    z-index: 1;
-    bottom:20px;
-    left: 80px;
+    padding: 20px 0px 0px 40px;
+    display: inline-block;
+}
+.headline_illustration a,.headline_illustration a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(256,256,256,0.5);
+  -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+}
+.headline_illustration a:hover,
+.headline_illustration a:visited:hover {
+  color: rgba(256,256,256, 0.7);
+  border-color: rgba(256,256,256,0.3);
+  -webkit-transition: 0s ease;
+          transition: 0s ease;
 }
 .headline h1 {
-    color: white;
     font-family: 'PT Sans Caption';
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 15px;
 }
 .caption {
-    color: white;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 5px;
+    max-width: 500px;
 }
-.information {
+.infobar {
     font-size: 16px;
 }
 .author {
@@ -208,5 +255,20 @@ body {
 .date {
     color: rgba(256,256,256,0.7);
 }
+/* Конец чёрого фона */
 
 /* Конец шапки */
+.footer_container {
+	width: 100%;
+	background: #f5f5f5;
+	height: 140px;
+}
+.footer {
+	width: 1000px;
+	padding: 40px 40px;
+	margin: 0 auto;
+}
+.by {
+	color:#b8b8b8;
+	margin-top: 20px;
+}
