@@ -24,11 +24,6 @@ a:visited:hover {
   -webkit-transition: 0s ease;
           transition: 0s ease;
 }
-.root {
-    margin: 20px 40px;
-    min-height: 100%;
-    padding-bottom:-140px
-}
 /* Шапка */
 .header_container {
     width: 100%;
@@ -256,8 +251,15 @@ a:visited:hover {
     color: rgba(256,256,256,0.7);
 }
 /* Конец чёрого фона */
-
 /* Конец шапки */
+
+.root {
+    margin: 20px 40px;
+    min-height: 100%;
+    padding-bottom:-140px
+}
+
+/* Подвал */
 .footer_container {
 	width: 100%;
 	background: #f5f5f5;
@@ -272,3 +274,4 @@ a:visited:hover {
 	color:#b8b8b8;
 	margin-top: 20px;
 }
+/* Конец подвала */
