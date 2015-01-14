@@ -455,7 +455,7 @@ blockquote.quote_white:after {
 }
 .box span {
 	display: block;
-	font-family: 'Helvetica Neue';
+	font-family: 'Helvetica Neue',Arial;
 	margin-top: 5px;
 	font-size: 16px;
 }
@@ -471,9 +471,9 @@ blockquote.quote_white:after {
 }
 .box_illustration .img_cont {
 	text-align: center;
-}
-.box_illustration img {
-	height: 170px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;
 }
 /* C фоновой картинкой общие свойства */
 .box_image:hover,.box_image_big:hover {
