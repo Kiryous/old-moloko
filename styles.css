@@ -222,7 +222,8 @@ a.post_image,a.post_image:hover {
 	background-repeat: no-repeat;
 }
 .fotorama .headline_illustration {
-	padding: 20px 0px 0px 340px;
+	padding: 20px 0px 0px 0px;
+	text-align: center;
 }
 .headline_illustration {
     padding: 20px 0px 0px 40px;
