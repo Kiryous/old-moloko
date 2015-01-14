@@ -96,11 +96,16 @@ a:visited:hover {
 
 /* Для черного фона */
 .logo {
+	display: block;
+	border: 0;
     background-image: url(http://moloko.kirys.ru/img/logo-whbd.png);
     width: 171px;
     height: 44px;
     display: inline-block;
     margin-left: 30px;
+}
+.logo:hover {
+	border: 0;
 }
 /* Социоссылки */
 .twi,.vk,.fb,.inst {
@@ -500,13 +505,7 @@ blockquote.quote_white:after {
 .box_image {
 	height: 150px;
 	position: relative;
-}
-.box_image .img_cont {
-	width: 150px;
-	position: absolute;
-	top:0;
-	left:0;
-	
+	background-size: cover;
 }
 .box_image:after {
 	content:' ';
@@ -517,22 +516,11 @@ blockquote.quote_white:after {
     height:100%;
     background:rgba(0, 0, 0, 0.6);
 }
-.box_image img {
-	max-height: 400px;
-}
 /* Большой блок с фоновой картинкой */
 .box_image_big {
 	height: 330px;
 	position: relative;
-}
-.box_image_big .img_cont {
-	width: 330px;
-	position: absolute;
-	top:0;
-	left:0;
-}
-.box_image_big img {
-	height: 500px;
+	background-size: cover;
 }
 .box_image_big:after {
 	content:' ';
