@@ -548,6 +548,7 @@ blockquote.quote_white:after {
 }
 .footer ul li {
 	display: inline-block;
+	margin-right: 10px;
 }
 .by {
 	color:#b8b8b8;
