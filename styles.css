@@ -546,6 +546,9 @@ blockquote.quote_white:after {
 	padding: 40px 40px;
 	margin: 0 auto;
 }
+.footer ul li {
+	display: inline-block;
+}
 .by {
 	color:#b8b8b8;
 	margin-top: 20px;
